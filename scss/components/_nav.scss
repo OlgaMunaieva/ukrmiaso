@@ -1,0 +1,38 @@
+.nav {
+  @include flex($gp: none);
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  &__list {
+    display: none;
+    @include tablet {
+      display: flex;
+      margin-left: 93px;
+      width: 281px;
+      justify-content: space-between;
+    }
+  }
+  &__link {
+    position: relative;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-main);
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: var(--transition-hover-focus-color);
+    &.accent {
+      color: var(--color-accent);
+    }
+    &:hover,
+    &:focus {
+      color: var(--color-accent);
+    }
+  }
+  &__item {
+    display: block;
+  }
+}

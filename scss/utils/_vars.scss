@@ -1,0 +1,27 @@
+:root {
+  --primary-text-color-main: #212121;
+  --secondary-text-color-main: #757575;
+  --primary-text-color-opposit: #ffffff;
+  --secondary-text-color-opposit: rgba(255, 255, 255, 0.6);
+  --logo-color: #000000;
+  --color-accent: #2196f3;
+  --color-accent-secondary: #188ce8;
+  --primary-background-color-main: #c59b9b;
+  --secondary-background-color-next: #f5f4fa;
+  --secondary-background-color-opposit: #2f303a;
+  --header-border-color: #ececec;
+  --portfolio-border-color: #eeeeee;
+  --hero-background-color: #c4c4c4;
+  --icon-soc-color: #afb1b8;
+  --secondary-text-color-opposit-more-transparent: rgba(255, 255, 255, 0.1);
+  --shadow-color: rgba(0, 0, 0, 0.25);
+  --transition-hover-focus-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-hover-focus-bgd-color: background-color 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-hover-focus-shadow-color: box-shadow 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-hover-focus-border-color: border-color 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-hover-focus-fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-hover-focus-border: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

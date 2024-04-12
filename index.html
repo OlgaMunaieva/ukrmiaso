@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="./images/bull-logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>УКРМʼЯСО - УЛЮБЛЕНІ КОВБАСИ ТА ДЕЛІКАТЕСИ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Indie+Flower&family=Inter&family=Manrope:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container container">
+            <nav class="nav">
+                <a class="logo logo--header link" href="./index.html" lang="en">
+                    <img src="./images/logo-ukrmiaso.svg" width="70" height="70" alt="logo">
+                </a>
+                <ul class="nav__list list">
+                    <li class="nav__item">
+                        <a class="nav__link link accent" href="./index.html">Про нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="./portfolio.html">Продукція</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="#">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="contacts list">
+                <li class="contacts__item">
+                    <a class="contacts__link link" href="mailto:sales@ukrmiaso.com">
+                        <svg class="contacts__icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-header-envelope"></use>
+                        </svg>sales@ukrmiaso.com</a>
+                </li>
+                <li class="contacts__item">
+                    <a class="cos__link cos__link--footer-color link" href="tel:+380961111111">
+                        <svg class="cos__icon cos__icon--change-fill" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg> https://t.me/ukrmiaso2023</a>
+                </li>
+            </ul>
+            <button class="menu__open" type="button" data-menu-open>
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="hero__title">та сама ковбаса, яку бажали скоштувати</h1>
+            <button class="hero__button button" type="button" data-modal-open>зверниться до нас</button>
+        </section>
+        <section class="features section">
+            <h2 class="visually-hidden">Наші переваги</h2>
+            <ul class="features__list list container">
+                <li class="features__item">
+                    <div class="features__container">
+                        <svg class="features__icon" width="70" height="70">
+                            <use href="./images/icons.svg#icon-attention_to_deteil"></use>
+                        </svg>
+                    </div>
+                    <h3 class="features__title">клієнтоорієнтованість</h3>
+                    <p class="features__text">Ідейні міркування, і навіть початок повсякденної роботи з
+                        формування
+                        позиції.</p>
+                </li>
+                <li class="features__item">
+                    <div class="features__container">
+                        <svg class="features__icon" width="70" height="70">
+                            <use href="./images/icons.svg#icon-features-clock"></use>
+                        </svg>
+                    </div>
+                    <h3 class="features__title">пунктуальність</h3>
+                    <p class="features__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у
+                        себе.</p>
+                </li>
+                <li class="features__item">
+                    <div class="features__container">
+                        <svg class="features__icon" width="70" height="70">
+                            <use href="./images/icons.svg#icon-features-diagram"></use>
+                        </svg>
+                    </div>
+                    <h3 class="features__title">планування</h3>
+                    <p class="features__text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                </li>
+                <li class="features__item">
+                    <div class="features__container">
+                        <svg class="features__icon" width="70" height="70">
+                            <use href="./images/icons.svg#icon-features-astronaut"></use>
+                        </svg>
+                    </div>
+                    <h3 class="features__title">сучасні технології</h3>
+                    <p class="features__text">Значимість цих проблем настільки очевидна, що реалізація планових
+                        завдань.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="doing section">
+            <div class="container">
+                <h2 class="title title--margin">Чим ми займаємося</h2>
+                <ul class="doing__list list">
+                    <li class="doing__item">
+                        <picture>
+                            <source srcset="./images/Desktop/doing1.webp 1x, ./images/Desktop/doing1-2x.webp 2x"
+                                type="image/webp">
+                            <img srcset="./images/Desktop/doing1.jpg 1x, ./images/Desktop/doing1-2x.jpg 2x"
+                                src="./images/Desktop/doing1.jpg"
+                                alt="людина працює за компьютером з алгорітмом на папері" width="370" height="294">
+                        </picture>
+                        <h3 class="doing__text">Десктопні додатки</h3>
+                    </li>
+                    <li class="doing__item">
+                        <picture>
+                            <source srcset="./images/Desktop/doing2.webp 1x, ./images/Desktop/doing2-2x.webp 2x"
+                                type="image/webp">
+                            <img srcset="./images/Desktop/doing2.jpg 1x, ./images/Desktop/doing2-2x.jpg 2x"
+                                src="./images/Desktop/doing2.jpg" alt="людина працює за компьютером зі смартфоном"
+                                width="370" height="294">
+                        </picture>
+                        <h3 class="doing__text">Мобільні додатки</h3>
+                    </li>
+                    <li class="doing__item">
+                        <picture>
+                            <source srcset="./images/Desktop/doing3.webp 1x, ./images/Desktop/doing3-2x.webp 2x"
+                                type="image/webp">
+                            <img srcset="./images/Desktop/doing3.jpg 1x, ./images/Desktop/doing3-2x.jpg 2x"
+                                src="./images/Desktop/doing3.jpg" alt="людина працює за компьютером з планшетом"
+                                width="370" height="294">
+                        </picture>
+                        <h3 class="doing__text">Дизайнерські рішення</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="team section">
+            <div class="container">
+                <h2 class="title title--margin">Наша команда</h2>
+                <ul class="team__list list">
+                    <li class="team__item">
+                        <picture>
+                            <source srcset='./images/Desktop/teamcard1.webp 1x, ./images/Desktop/teamcard1@2x.webp 2x'
+                                media='(min-width: 1200px)' type='image/webp' width="270" height="260">
+                            <source srcset='./images/Desktop/teamcard1.jpg 1x, ./images/Desktop/teamcard1@2x.jpg 2x'
+                                media='(min-width: 1200px)' type='image/jpeg' width="270" height="260">
+                            <source srcset='./images/Tablet/teamcard1.webp 1x, ./images/Tablet/teamcard1@2x.webp 2x'
+                                media='(min-width: 768px)' type='image/webp' width="354" height="374">
+                            <source srcset='./images/Tablet/teamcard1.jpg 1x, ./images/Tablet/teamcard1@2x.jpg 2x'
+                                media='(min-width: 768px)' type='image/jpeg' width="354" height="374">
+                            <source srcset='./images/Mobile/teamcard1.webp 1x, ./images/Mobile/teamcard1@2x.webp 2x'
+                                media='(max-width: 767px)' type='image/webp' width="450" height="460">
+                            <source srcset='./images/Mobile/teamcard1.jpg 1x, ./images/Mobile/teamcard1@2x.jpg 2x'
+                                media='(max-width: 767px)' type='image/jpeg' width="450" height="460">
+                            <img src="./images/Desktop/teamcard1.jpg" alt="усміхнений чоловік в окулярах" width="270"
+                                height="260">
+                        </picture>
+                        <div class="team__card">
+                            <h3 class="team__title">Ігор Дем'яненко</h3>
+                            <p class="team__job" lang="en">Product Designer</p>
+                            <ul class="cos cos--team">
+                                <li class="list">
+                                    <a href="#" class="cos__link link">
+                                        <svg class="cos__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#" class="cos__link link">
+                                        <svg class="cos__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#" class="cos__link link">
+                                        <svg class="cos__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#" class="cos__link link">
+                                        <svg class="cos__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team__item">
+                        <picture>
+                            <source srcset='./images/Desktop/teamcard2.webp 1x, ./images/Desktop/teamcard2@2x.webp 2x'
+                                media='(min-width: 1200px)' type='image/webp' width="270" height="260">
+                            <source srcset='./images/Desktop/teamcard2.jpg 1x, ./images/Desktop/teamcard2@2x.jpg 2x'
+                                media='(min-width: 1200px)' type='image/jpeg' width="270" height="260">
+                            <source srcset='./images/Tablet/teamcard2.webp 1x, ./images/Tablet/teamcard2@2x.webp 2x'
+                                media='(min-width: 768px)' type='image/webp' width="354" height="374">
+                            <source srcset='./images/Tablet/teamcard2.jpg 1x, ./images/Tablet/teamcard2@2x.jpg 2x'
+                                media='(min-width: 768px)' type='image/jpeg' width="354" height="374">
+                            <source srcset='./images/Mobile/teamcard2.webp 1x, ./images/Mobile/teamcard2@2x.webp 2x'
+                                media='(max-width: 767px)' type='image/webp' width="450" height="460">
+                            <source srcset='./images/Mobile/teamcard2.jpg 1x, ./images/Mobile/teamcard2@2x.jpg 2x'
+                                media='(max-width: 767px)' type='image/jpeg' width="450" height="460">
+                            <img src="./images/Desktop/teamcard2.jpg" alt="усміхнена жінка в окулярах" width="270"
+                                height="260">
+                        </picture>
+                        <div class="team__card">
+                            <h3 class="team__title">Ольга Рєпіна</h3>
+                            <p class="team__job" lang="en">Frontend Developer</p>
+                            <ul class="cos cos--team">
+                                <li class="list">
+                                    <a href="#" class="cos__link link">
+                                        <svg class="cos__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#" class="cos__link link">
+                                        <svg class="cos__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#" class="cos__link link">
+                                        <svg class="cos__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#" class="cos__link link">
+                                        <svg class="cos__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team__item">
+                        <picture>
+                            <source srcset='./images/Desktop/teamcard3.webp 1x, ./images/Desktop/teamcard3@2x.webp 2x'
+                                media='(min-width: 1200px)' type='image/webp' width="270" height="260">
+                            <source srcset='./images/Desktop/teamcard3.jpg 1x, ./images/Desktop/teamcard3@2x.jpg 2x'
+                                media='(min-width: 1200px)' type='image/jpeg' width="270" height="260">
+                            <source srcset='./images/Tablet/teamcard3.webp 1x, ./images/Tablet/teamcard3@2x.webp 2x'
+                                media='(min-width: 768px)' type='image/webp' width="354" height="374">
+                            <source srcset='./images/Tablet/teamcard3.jpg 1x, ./images/Tablet/teamcard3@2x.jpg 2x'
+                                media='(min-width: 768px)' type='image/jpeg' width="354" height="374">
+                            <source srcset='./images/Mobile/teamcard3.webp 1x, ./images/Mobile/teamcard3@2x.webp 2x'
+                                media='(max-width: 767px)' type='image/webp' width="450" height="460">
+                            <source srcset='./images/Mobile/teamcard3.jpg 1x, ./images/Mobile/teamcard3@2x.jpg 2x'
+                                media='(max-width: 767px)' type='image/jpeg' width="450" height="460">
+                            <img src="./images/Desktop/teamcard3.jpg" alt="усміхнений чоловік" width="270" height="260">
+                        </picture>
+                        <div class="team__card">
+                            <h3 class="team__title">Микола Тарасов</h3>
+                            <p class="team__job" lang="en">Marketing</p>
+                            <ul class="cos cos--team">
+                                <li class="list">
+                                    <a href="#" class="cos__link link">
+                                        <svg class="cos__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#" class="cos__link link">
+                                        <svg class="cos__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#" class="cos__link link">
+                                        <svg class="cos__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#" class="cos__link link">
+                                        <svg class="cos__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team__item">
+                        <picture>
+                            <source srcset='./images/Desktop/teamcard4.webp 1x, ./images/Desktop/teamcard4@2x.webp 2x'
+                                media='(min-width: 1200px)' type='image/webp' width="270" height="260">
+                            <source srcset='./images/Desktop/teamcard4.jpg 1x, ./images/Desktop/teamcard4@2x.jpg 2x'
+                                media='(min-width: 1200px)' type='image/jpeg' width="270" height="260">
+                            <source srcset='./images/Tablet/teamcard4.webp 1x, ./images/Tablet/teamcard4@2x.webp 2x'
+                                media='(min-width: 768px)' type='image/webp' width="354" height="374">
+                            <source srcset='./images/Tablet/teamcard4.jpg 1x, ./images/Tablet/teamcard4@2x.jpg 2x'
+                                media='(min-width: 768px)' type='image/jpeg' width="354" height="374">
+                            <source srcset='./images/Mobile/teamcard4.webp 1x, ./images/Mobile/teamcard4@2x.webp 2x'
+                                media='(max-width: 767px)' type='image/webp' width="450" height="460">
+                            <source srcset='./images/Mobile/teamcard4.jpg 1x, ./images/Mobile/teamcard4@2x.jpg 2x'
+                                media='(max-width: 767px)' type='image/jpeg' width="450" height="460">
+                            <img src="./images/Desktop/teamcard4.jpg" alt="усміхнений чоловік в окулярах" width="270"
+                                height="260">
+                        </picture>
+                        <div class="team__card">
+                            <h3 class="team__title">Михайло Єрмаков</h3>
+                            <p class="team__job" lang="en">UI Designer</p>
+                            <ul class="cos cos--team">
+                                <li class="list">
+                                    <a href="#" class="cos__link link">
+                                        <svg class="cos__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#" class="cos__link link">
+                                        <svg class="cos__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#" class="cos__link link">
+                                        <svg class="cos__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#" class="cos__link link">
+                                        <svg class="cos__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2 class="title title--margin">Постійні клієнти</h2>
+                <ul class="clients list">
+                    <li class="clients__item">
+                        <a href="#" class="clients__link">
+                            <svg class="clients__logo" width="106" height="60">
+                                <use href="./images/icons.svg#icon-client-first"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="#" class="clients__link">
+                            <svg class="clients__logo" width="106" height="60">
+                                <use href="./images/icons.svg#icon-client-second"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="#" class="clients__link">
+                            <svg class="clients__logo" width="106" height="60">
+                                <use href="./images/icons.svg#icon-client-third"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="#" class="clients__link">
+                            <svg class="clients__logo" width="106" height="60">
+                                <use href="./images/icons.svg#icon-client-forth"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="#" class="clients__link">
+                            <svg class="clients__logo" width="106" height="60">
+                                <use href="./images/icons.svg#icon-client-fifth"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="#" class="clients__link">
+                            <svg class="clients__logo" width="106" height="60">
+                                <use href="./images/icons.svg#icon-client-sixth"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__combiner">
+                <div class="footer__address">
+                    <a class="logo logo--opposite link" href="./index.html" lang="en">
+                        <span class="logo__accent">Web</span>Studio
+                    </a>
+                    <address class="address">
+                        <ul class="list">
+                            <li class="address__item"><a class="address__contact address__contact--first link"
+                                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                                    rel="noopener noreferrer nofollow">г.
+                                    Киев,
+                                    пр-т Леси
+                                    Украинки, 26</a></li>
+                            <li class="address__item"><a class="address__contact link"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="address__item"><a class="address__contact link" href="tel:+380961111111">+38
+                                    096
+                                    111
+                                    11
+                                    11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer__cos">
+                    <p class="footer__appeal">приєднуйтесь</p>
+                    <ul class="cos">
+                        <li class="list">
+                            <a href="#" class="cos__link cos__link--footer-color link">
+                                <svg class="cos__icon cos__icon--change-fill" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="cos__link cos__link--footer-color link">
+                                <svg class="cos__icon cos__icon--change-fill" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="cos__link cos__link--footer-color link">
+                                <svg class="cos__icon cos__icon--change-fill" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="cos__link cos__link--footer-color link">
+                                <svg class="cos__icon cos__icon--change-fill" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <form class="footer__form">
+                <p class="footer__appeal">Підпишіться на розсилку</p>
+                <div class="footer__label">
+                    <input class="footer__input" type="email" name="mail" placeholder="E-mail">
+                    <button class="footer__button button" type="submit">Підписатися
+                        <svg class="footer__icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal__close" type="button" data-modal-close>
+                <svg width="11" height="11">
+                    <use href="./images/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
+            <form class="modal__form">
+                <p class="modal__appeal">Залиште свої дані, ми вам передзвонимо</p>
+                <ul class="modal__list list">
+                    <li class="modal__item">
+                        <label for="modal-imput-name">
+                            <span>Ім'я</span>
+                        </label>
+                        <span class="modal__wrap">
+                            <input class="modal__input" type="text" name="name" id="modal-imput-name" placeholder=" ">
+                            <svg class="modal__icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                        </span>
+                    </li>
+                    <li class="modal__item">
+                        <label for="modal-imput-tel">
+                            <span>Телефон</span>
+                        </label>
+                        <span class="modal__wrap">
+                            <input class="modal__input" type="tel" name="tel" id="modal-imput-tel" placeholder=" ">
+                            <svg class="modal__icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </span>
+                    </li>
+                    <li class="modal__item">
+                        <label for="modal-imput-email">
+                            <span>Пошта</span>
+                        </label>
+                        <span class="modal__wrap">
+                            <input class="modal__input" type="email" name="email" id="modal-imput-email"
+                                placeholder=" ">
+                            <svg class="modal__icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-email"></use>
+                            </svg>
+                        </span>
+                    </li>
+                    <li class="modal__item">
+                        <label for="modal-imput-comment">
+                            <span>Коментар</span>
+                        </label>
+                        <textarea class="modal__input" name="comment" id="modal-imput-comment"
+                            placeholder="Введіть текст"></textarea>
+                    </li>
+                </ul>
+                <div class="check">
+                    <input class="check__imput visually-hidden" type="checkbox" name="privacy" value="true"
+                        id="privacy">
+                    <label class="check__text" for="privacy">
+                        <span class="check__wrap">
+                            <svg class="check__icon" width="16" height="15">
+                                <use href="./images/icons.svg#icon-check1"></use>
+                            </svg>
+                        </span>
+                        <span>Погоджуюся з розсилкою та приймаю
+                            <a class="check__link" href="./agreement.html">Умови договору</a>
+                        </span>
+                    </label>
+                </div>
+                <button class="modal__btn--send button" type="submit">Відправити
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="backdrop is-hidden" data-menu>
+        <div class="menu">
+            <button class="menu__close" type="button" data-menu-close>
+                <svg width="11" height="11">
+                    <use href="./images/icons.svg#icon-close_24px"></use>
+                </svg>
+            </button>
+            <ul class="nav__list nav__list--menu list">
+                <li class="nav__item nav__item--menu">
+                    <a class="nav__link nav__link--menu link" href="./index.html">Студія</a>
+                </li>
+                <li class="nav__item nav__item--menu">
+                    <a class="nav__link nav__link--menu link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="nav__item nav__item--menu">
+                    <a class="nav__link nav__link--menu link" href="#">Контакти</a>
+                </li>
+            </ul>
+            <div>
+                <ul class="contacts contacts--menu list">
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--menu-tel link" href="tel:+380961111111">+38 096 111 11
+                            11</a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--menu link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="cos-menu list">
+                    <li class="cos-menu__item">
+                        <a href="#" class="cos-menu__link link">Instagram</a>
+                    </li>
+                    <li class="cos-menu__item">
+                        <a href="#" class="cos-menu__link link">Twitter</a>
+                    </li>
+                    <li class="cos-menu__item">
+                        <a href="#" class="cos-menu__link link">Facebook</a>
+                    </li>
+                    <li class="cos-menu__item">
+                        <a href="#" class="cos-menu__link link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>

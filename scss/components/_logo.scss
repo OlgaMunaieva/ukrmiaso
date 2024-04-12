@@ -1,0 +1,37 @@
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
+  color: var(--primary-text-color-opposit);
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include tablet {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  &__accent {
+    color: var(--color-accent);
+  }
+  &--opposite {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  &--header {
+    color: var(--logo-color);
+  }
+}

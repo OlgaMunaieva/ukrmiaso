@@ -1,0 +1,24 @@
+.address {
+  font-style: inherit;
+  display: inline-block;
+  min-width: 231px;
+  text-align: center;
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &__contact {
+    line-height: 1.71;
+    color: var(--secondary-text-color-opposit);
+
+    transition: var(--transition-hover-focus-color);
+    &:hover,
+    &:focus {
+      color: var(--color-accent);
+    }
+    &--first {
+      color: var(--primary-text-color-opposit);
+
+      transition: var(--transition-hover-focus-color);
+    }
+  }
+}

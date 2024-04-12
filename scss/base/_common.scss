@@ -1,0 +1,19 @@
+body {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  // font-weight: <weight>;
+  font-style: normal;
+  // font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color-main);
+  background-color: var(--primary-background-color-main);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}

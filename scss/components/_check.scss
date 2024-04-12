@@ -1,0 +1,52 @@
+.check {
+  &__text {
+    @include flex($ai: center, $jc: center, $gp: 8px);
+    // display: flex;
+    // gap: 8px;
+    // justify-content: center;
+    // align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+
+    font-weight: 400;
+
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color-main);
+
+    transition: var(--transition-hover-focus-fill);
+    .check__imput:checked + & span {
+      border: none;
+      fill: var(--color-accent);
+    }
+  }
+  &__wrap {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    transition: var(--transition-hover-focus-fill);
+    transition: var(--transition-hover-focus-border);
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+
+    color: var(--color-accent);
+  }
+}

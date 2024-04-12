@@ -1,0 +1,40 @@
+.clients {
+  @include flex($ai: center, $jc: center, $gp: 30px);
+  // display: flex;
+  // gap: 30px;
+  &__item {
+    width: calc((450px - 30px) / 2);
+    @include tablet {
+      @include calc(3, 30px);
+    }
+    @include desktop {
+      @include calc(6, 30px);
+    }
+  }
+  &__link {
+    display: inline-block;
+    // width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-soc-color);
+    border-radius: 4px;
+    @include flex($jc: center, $gp: none);
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    transition: var(--transition-hover-focus-border-color);
+    &:hover,
+    &:focus {
+      border-color: var(--color-accent);
+    }
+  }
+  &__logo {
+    fill: var(--icon-soc-color);
+
+    transition: var(--transition-hover-focus-fill);
+    .clients__link:hover &,
+    .clients__link:focus & {
+      fill: var(--color-accent);
+    }
+  }
+}

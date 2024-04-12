@@ -1,0 +1,10 @@
+.section {
+  // width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // justify-items: center;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

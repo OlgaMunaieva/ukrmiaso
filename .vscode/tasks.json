@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label": "Сайт: предпросмотр", "type": "process", "command": "python3", "args": ["-m", "http.server", "8765", "--bind", "127.0.0.1"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []},
+    {"label": "Сайт: заменить прайс PDF", "type": "process", "command": "python3", "args": ["tools/manage_site.py", "price", "${input:pricePath}", "--date", "${input:priceDate}"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []},
+    {"label": "Сайт: заменить фото товара", "type": "process", "command": "python3", "args": ["tools/manage_site.py", "photo", "${input:productId}", "${input:photoPath}"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []},
+    {"label": "Сайт: добавить второе фото товара", "type": "process", "command": "python3", "args": ["tools/manage_site.py", "photo", "${input:productId}", "${input:photoPath}", "--extra"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []},
+    {"label": "Сайт: собрать ZIP для HOSTiQ", "type": "process", "command": "python3", "args": ["tools/manage_site.py", "pack"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []}
+  ],
+  "inputs": [
+    {"id": "pricePath", "type": "promptString", "description": "Полный путь к новому PDF (Finder: Option+Command+C)"},
+    {"id": "priceDate", "type": "promptString", "description": "Дата прайса: ГГГГ-ММ-ДД", "default": "2026-10-01"},
+    {"id": "productId", "type": "promptString", "description": "Номер товара из assets/products.js (поле id)"},
+    {"id": "photoPath", "type": "promptString", "description": "Полный путь к фотографии JPG, PNG или WebP (Finder: Option+Command+C)"}
+  ]
+}

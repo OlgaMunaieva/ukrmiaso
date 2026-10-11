@@ -2,21 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ukrmiaso.com/</loc>
+    <lastmod>2026-10-11</lastmod>
     <xhtml:link rel="alternate" hreflang="uk" href="https://ukrmiaso.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ukrmiaso.com/?lang=en"/>
   </url>
   <url>
     <loc>https://ukrmiaso.com/?lang=en</loc>
+    <lastmod>2026-10-11</lastmod>
     <xhtml:link rel="alternate" hreflang="uk" href="https://ukrmiaso.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ukrmiaso.com/?lang=en"/>
   </url>
   <url>
     <loc>https://ukrmiaso.com/catalog.html</loc>
+    <lastmod>2026-10-11</lastmod>
     <xhtml:link rel="alternate" hreflang="uk" href="https://ukrmiaso.com/catalog.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ukrmiaso.com/catalog.html?lang=en"/>
   </url>
   <url>
     <loc>https://ukrmiaso.com/catalog.html?lang=en</loc>
+    <lastmod>2026-10-11</lastmod>
     <xhtml:link rel="alternate" hreflang="uk" href="https://ukrmiaso.com/catalog.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ukrmiaso.com/catalog.html?lang=en"/>
   </url>

@@ -115,23 +115,36 @@ function initHeroSlider(){
 function initBrandAnimation(){
  const brands=[...document.querySelectorAll('a.brand')];if(!brands.length)return;
  const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
- let timer=null,animatingBrand=null;
+ let animationTimer=null,navigationTimer=null;
  function reset(){
-  clearTimeout(timer);timer=null;animatingBrand=null;
+  clearTimeout(animationTimer);clearTimeout(navigationTimer);
+  animationTimer=null;navigationTimer=null;
   brands.forEach(brand=>brand.classList.remove('is-animating'));
  }
+ function play(){
+  if(reducedMotion.matches)return;
+  clearTimeout(animationTimer);
+  brands.forEach(brand=>{
+   brand.classList.remove('is-animating');
+   void brand.offsetWidth;
+   brand.classList.add('is-animating');
+  });
+  animationTimer=setTimeout(()=>{
+   brands.forEach(brand=>brand.classList.remove('is-animating'));
+   animationTimer=null;
+  },850);
+ }
+ // Capture taps and clicks, including controls that handle their own events.
+ document.addEventListener('click',play,true);
  brands.forEach(brand=>brand.addEventListener('click',event=>{
-  // Preserve the link's normal new-tab, download and reduced-motion behaviour.
+  // Keep modified clicks and reduced-motion navigation native.
   if(event.defaultPrevented||(typeof event.button==='number'&&event.button!==0)||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey||brand.hasAttribute('download')||(brand.target&&brand.target!=='_self')||reducedMotion.matches||!brand.querySelector('svg'))return;
   event.preventDefault();
-  if(animatingBrand)return;
-  animatingBrand=brand;brand.classList.add('is-animating');
-  timer=setTimeout(()=>{
-   const destination=brand.href;
-   reset();
-   location.assign(destination);
-  },850);
+  if(navigationTimer!==null)return;
+  const destination=brand.href;
+  navigationTimer=setTimeout(()=>{reset();location.assign(destination);},850);
  }));
+ reducedMotion.addEventListener('change',reset);
  window.addEventListener('pagehide',reset);
  window.addEventListener('pageshow',reset);
  reset();

@@ -116,7 +116,8 @@ window.PRODUCTS = [
     "casing": "черева",
     "shelf": "25 діб",
     "price": 357.0,
-    "nameEn": "Rubana"
+    "nameEn": "Rubana",
+    "image": "assets/product-09-20261101.jpg"
   },
   {
     "id": 10,
@@ -243,7 +244,8 @@ window.PRODUCTS = [
     "casing": "целюлозна",
     "shelf": "20 діб",
     "price": 202.0,
-    "nameEn": "Burzhui frankfurters"
+    "nameEn": "Burzhui frankfurters",
+    "image": "assets/product-20-20261101.jpg"
   },
   {
     "id": 21,
@@ -371,7 +373,8 @@ window.PRODUCTS = [
     "casing": "",
     "shelf": "20 діб",
     "price": 306.0,
-    "nameEn": "Spiced pork belly"
+    "nameEn": "Spiced pork belly",
+    "image": "assets/product-30-20261101.jpg"
   },
   {
     "id": 31,
@@ -427,7 +430,8 @@ window.PRODUCTS = [
     "casing": "",
     "shelf": "20 діб",
     "price": 320.0,
-    "nameEn": "Smoked & cooked chicken fillet"
+    "nameEn": "Smoked & cooked chicken fillet",
+    "image": "assets/product-34-20261101.jpg"
   },
   {
     "id": 35,
@@ -438,7 +442,8 @@ window.PRODUCTS = [
     "casing": "",
     "shelf": "20 діб",
     "price": 178.0,
-    "nameEn": "Smoked & cooked chicken wing"
+    "nameEn": "Smoked & cooked chicken wing",
+    "image": "assets/product-35-20261101.jpg"
   },
   {
     "id": 36,
@@ -449,7 +454,8 @@ window.PRODUCTS = [
     "casing": "",
     "shelf": "20 діб",
     "price": 173.0,
-    "nameEn": "Smoked & cooked coquelet leg"
+    "nameEn": "Smoked & cooked coquelet leg",
+    "image": "assets/product-36-20261101.jpg"
   },
   {
     "id": 37,
@@ -472,7 +478,8 @@ window.PRODUCTS = [
     "casing": "",
     "shelf": "20 діб",
     "price": 113.0,
-    "nameEn": "Smoked & cooked chicken back"
+    "nameEn": "Smoked & cooked chicken back",
+    "image": "assets/product-38-20261101.jpg"
   },
   {
     "id": 39,
